@@ -1,24 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hire Flow | Digital Agency</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-<style>
-
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
 font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
 }
 
 body{
 background:#071320;
 color:#fff;
+line-height:1.7;
 }
 
 header{
@@ -26,26 +17,38 @@ position:fixed;
 top:0;
 left:0;
 width:100%;
-padding:20px 8%;
 display:flex;
 justify-content:space-between;
 align-items:center;
-background:rgba(0,0,0,.6);
+padding:18px 8%;
+background:rgba(6,18,34,.95);
 backdrop-filter:blur(10px);
 z-index:1000;
 }
 
 .logo{
-font-size:30px;
-font-weight:700;
+display:flex;
+align-items:center;
+gap:10px;
+}
+
+.logo img{
+width:55px;
+height:55px;
+border-radius:50%;
+}
+
+.logo h2{
 color:#FFD700;
+font-size:28px;
 }
 
 nav a{
-color:#fff;
+color:white;
 text-decoration:none;
 margin-left:30px;
 transition:.3s;
+font-weight:500;
 }
 
 nav a:hover{
@@ -53,353 +56,352 @@ color:#FFD700;
 }
 
 .hero{
-height:100vh;
+padding:140px 8% 80px;
 display:flex;
 align-items:center;
-justify-content:center;
-text-align:center;
-padding:0 20px;
-background:linear-gradient(135deg,#081b29,#0d47a1);
+justify-content:space-between;
+flex-wrap:wrap;
+min-height:100vh;
+background:linear-gradient(135deg,#071320,#0d3b66);
 }
 
-.hero-content h1{
-font-size:60px;
+.hero-text{
+max-width:600px;
+}
+
+.hero-text h1{
+font-size:58px;
 margin-bottom:20px;
 }
 
-.hero-content h1 span{
+.hero-text span{
 color:#FFD700;
 }
 
-.hero-content p{
-font-size:20px;
-max-width:700px;
-margin:auto;
-line-height:1.8;
+.hero-text p{
+font-size:18px;
+color:#ddd;
+margin-bottom:30px;
 }
 
-.btn{
-display:inline-block;
-margin-top:35px;
-padding:15px 40px;
-background:#FFD700;
-color:#000;
-font-weight:bold;
-border-radius:50px;
+.buttons{
+display:flex;
+gap:15px;
+flex-wrap:wrap;
+}
+
+.btn1,.btn2{
+padding:15px 30px;
+border-radius:40px;
 text-decoration:none;
+font-weight:600;
 transition:.3s;
 }
 
-.btn:hover{
-transform:scale(1.05);
+.btn1{
+background:#FFD700;
+color:#071320;
 }
 
-section{
-padding:100px 8%;
-}
-
-.title{
-text-align:center;
-font-size:40px;
-margin-bottom:50px;
+.btn2{
+border:2px solid #FFD700;
 color:#FFD700;
 }
 
+.btn1:hover,
+.btn2:hover{
+transform:translateY(-3px);
+}
+/* ===== About Section ===== */
+
+.about{
+padding:100px 8%;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+align-items:center;
+}
+
+.about h2{
+font-size:42px;
+color:#FFD700;
+margin-bottom:20px;
+}
+
+.about p{
+color:#ddd;
+font-size:17px;
+}
+
+.about-box{
+background:#10253c;
+padding:25px;
+border-radius:15px;
+margin-bottom:20px;
+transition:.3s;
+}
+
+.about-box:hover{
+transform:translateY(-8px);
+box-shadow:0 10px 25px rgba(255,215,0,.2);
+}
+
+/* ===== Services ===== */
+
 .services{
+padding:100px 8%;
+}
+
+.section-title{
+text-align:center;
+font-size:42px;
+color:#FFD700;
+margin-bottom:50px;
+}
+
+.service-grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
 gap:25px;
 }
 
-.card{
+.service-card{
 background:#10253c;
 padding:30px;
-border-radius:15px;
+border-radius:18px;
 transition:.3s;
 }
 
-.card:hover{
+.service-card:hover{
 transform:translateY(-10px);
-box-shadow:0 10px 25px rgba(255,215,0,.25);
+box-shadow:0 12px 25px rgba(255,215,0,.25);
 }
 
-.card h3{
-margin-bottom:15px;
+.service-card h3{
 color:#FFD700;
+margin-bottom:15px;
 }
 
-.card p{
+.service-card p{
 color:#ddd;
-line-height:1.7;
 }
 
-</style>
-</head>
-
-<body>
-
-<header>
-
-<div class="logo">Hire Flow</div>
-
-<nav>
-<a href="#">Home</a>
-<a href="#">About</a>
-<a href="#">Services</a>
-<a href="#">Contact</a>
-</nav>
-
-</header>
-
-<section class="hero">
-
-<div class="hero-content">
-
-<h1>Grow Your Business With <span>Hire Flow</span></h1>
-
-<p>
-Professional Website Development,
-Digital Marketing,
-SEO,
-Social Media Management,
-Graphic Designing,
-eCommerce Solutions,
-Lead Generation &
-Virtual Assistant Services.
-</p>
-
-<a href="https://wa.me/923289607245" class="btn">Chat on WhatsApp</a>
-
-</div>
-
-</section>
-
-<section>
-
-<h2 class="title">Our Services</h2>
-
-<div class="services">
-
-<div class="card">
-<h3>Website Development</h3>
-<p>Modern business websites and eCommerce stores.</p>
-</div>
-
-<div class="card">
-<h3>Digital Marketing</h3>
-<p>Grow your business through powerful marketing campaigns.</p>
-</div>
-
-<div class="card">
-<h3>SEO</h3>
-<p>Rank higher on Google and get more organic traffic.</p>
-</div>
-
-<div class="card">
-<h3>Social Media Management</h3>
-<p>Professional Facebook, Instagram & LinkedIn management.</p>
-</div>
-
-<div class="card">
-<h3>Graphic Designing</h3>
-<p>Logos, banners, flyers and social media creatives.</p>
-</div>
-
-<div class="card">
-<h3>eCommerce Solutions</h3>
-<p>eBay, Shopify and online store management.</p>
-</div>
-
-</div>
-
-</section>
-<section>
-
-<h2 class="title">About Hire Flow</h2>
-
-<div class="card">
-
-<p style="line-height:1.9;font-size:18px;">
-Hire Flow is a professional digital agency helping businesses
-grow online through Website Development, Digital Marketing,
-SEO, Social Media Management, Graphic Designing,
-Lead Generation, Virtual Assistant and eCommerce Solutions.
-Our mission is to provide high-quality digital services
-that help businesses achieve real results.
-</p>
-
-</div>
-
-</section>
-
-<section>
-
-<h2 class="title">Why Choose Hire Flow?</h2>
-
-<div class="services">
-
-<div class="card">
-<h3>🚀 Fast Delivery</h3>
-<p>Projects delivered on time with premium quality.</p>
-</div>
-
-<div class="card">
-<h3>💡 Creative Ideas</h3>
-<p>Modern and attractive designs for your business.</p>
-</div>
-
-<div class="card">
-<h3>📞 24/7 Support</h3>
-<p>Quick response and continuous customer support.</p>
-</div>
-
-<div class="card">
-<h3>⭐ Client Satisfaction</h3>
-<p>Our priority is long-term client success.</p>
-</div>
-
-</div>
-
-</section>
-
-<section>
-
-<h2 class="title">Contact Us</h2>
-
-<div class="card">
-
-<h3>📱 WhatsApp</h3>
-<p>+92 328 9607245</p>
-
-<br>
-
-<h3>📧 Email</h3>
-<p>hireflow.agency1@gmail.com</p>
-
-<br>
-
-<a href="https://wa.me/923289607245" class="btn">
-Chat on WhatsApp
-  <!-- Portfolio Section -->
-<section>
-
-<h2 class="title">Our Portfolio</h2>
-
-<div class="services">
-
-<div class="card">
-<h3>Business Website</h3>
-<p>Modern responsive websites for companies and startups.</p>
-</div>
-
-<div class="card">
-<h3>eCommerce Store</h3>
-<p>Professional Shopify & eBay solutions for online selling.</p>
-</div>
-
-<div class="card">
-<h3>Digital Marketing</h3>
-<p>Helping brands reach more customers through smart marketing.</p>
-</div>
-
-</div>
-
-</section>
-
-<!-- Testimonials -->
-
-<section>
-
-<h2 class="title">Client Testimonials</h2>
-
-<div class="services">
-
-<div class="card">
-<p>"Excellent service and professional team. Highly recommended!"</p>
-<h3>★★★★★</h3>
-</div>
-
-<div class="card">
-<p>"Our business website was delivered on time with amazing quality."</p>
-<h3>★★★★★</h3>
-</div>
-
-<div class="card">
-<p>"Great communication and outstanding digital marketing support."</p>
-<h3>★★★★★</h3>
-</div>
-
-</div>
-
-</section>
-
-<!-- FAQ -->
-
-<section>
-
-<h2 class="title">Frequently Asked Questions</h2>
-
-<div class="card">
-<h3>How long does a website take?</h3>
-<p>Most websites are completed within 5–10 business days depending on requirements.</p>
-</div>
-
-<br>
-
-<div class="card">
-<h3>Do you work with international clients?</h3>
-<p>Yes. We provide our services to clients worldwide.</p>
-</div>
-
-</section>
-
-<!-- Floating WhatsApp Button -->
-
-<a href="https://wa.me/923289607245"
-style="
+/* ===== Portfolio ===== */
+
+.portfolio{
+padding:100px 8%;
+}
+
+.portfolio-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.portfolio-card{
+background:#10253c;
+padding:30px;
+border-radius:18px;
+text-align:center;
+transition:.3s;
+}
+
+.portfolio-card:hover{
+transform:scale(1.03);
+}
+
+/* ===== Testimonials ===== */
+
+.testimonials{
+padding:100px 8%;
+}
+
+.testimonial-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.testimonial-card{
+background:#10253c;
+padding:30px;
+border-radius:18px;
+text-align:center;
+}
+
+.testimonial-card p{
+font-style:italic;
+margin-bottom:20px;
+}
+
+/* ===== Contact ===== */
+
+.contact{
+padding:100px 8%;
+text-align:center;
+}
+
+.contact-box{
+background:#10253c;
+padding:40px;
+border-radius:20px;
+max-width:700px;
+margin:auto;
+}
+
+.contact-box h3{
+color:#FFD700;
+margin-top:20px;
+}
+
+.contact-box p{
+margin-bottom:15px;
+}
+
+/* ===== Footer ===== */
+
+footer{
+background:#04101b;
+padding:40px 8%;
+text-align:center;
+}
+
+.footer-content h2{
+color:#FFD700;
+margin-bottom:15px;
+}
+
+.footer-content p{
+color:#ddd;
+margin:8px 0;
+}
+
+.copyright{
+margin-top:25px;
+font-size:14px;
+color:#999;
+}
+
+/* ===== Floating WhatsApp ===== */
+
+.whatsapp{
 position:fixed;
 bottom:25px;
 right:25px;
+width:60px;
+height:60px;
 background:#25D366;
-color:white;
-padding:16px 20px;
-border-radius:50px;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:28px;
 text-decoration:none;
-font-weight:bold;
-box-shadow:0 10px 25px rgba(0,0,0,.3);
-z-index:9999;">
-💬 WhatsApp
-</a>
+color:#fff;
+box-shadow:0 8px 20px rgba(0,0,0,.3);
+z-index:999;
+}
 
-<script>
+/* ===== Responsive ===== */
 
-// Smooth scrolling
-document.querySelectorAll('a[href^="#"]').forEach(anchor=>{
-anchor.addEventListener('click',function(e){
-e.preventDefault();
-document.querySelector(this.getAttribute('href')).scrollIntoView({
-behavior:'smooth'
+@media(max-width:900px){
+
+header{
+flex-direction:column;
+padding:15px;
+}
+
+nav{
+margin-top:15px;
+}
+
+nav a{
+margin:8px;
+display:inline-block;
+}
+
+.hero{
+text-align:center;
+padding-top:170px;
+}
+
+.hero-text h1{
+font-size:40px;
+}
+
+.about{
+grid-template-columns:1fr;
+}
+
+.hero-image img{
+width:100%;
+max-width:400px;
+margin-top:40px;
+}
+// ===== Navbar Shadow =====
+
+window.addEventListener("scroll", () => {
+const header = document.querySelector("header");
+
+if (window.scrollY > 50) {
+header.style.background = "#061222";
+header.style.boxShadow = "0 5px 20px rgba(0,0,0,.4)";
+} else {
+header.style.background = "rgba(6,18,34,.95)";
+header.style.boxShadow = "none";
+}
 });
-});
-});
 
-// Card animation
-const cards=document.querySelectorAll('.card');
+// ===== Fade In Animation =====
 
-const observer=new IntersectionObserver(entries=>{
-entries.forEach(entry=>{
-if(entry.isIntersecting){
-entry.target.style.opacity="1";
-entry.target.style.transform="translateY(0)";
+const observer = new IntersectionObserver((entries) => {
+entries.forEach(entry => {
+if (entry.isIntersecting) {
+entry.target.classList.add("show");
 }
 });
 });
 
-cards.forEach(card=>{
-card.style.opacity="0";
-card.style.transform="translateY(40px)";
-card.style.transition="0.8s";
-observer.observe(card);
+document.querySelectorAll(
+".service-card,.portfolio-card,.testimonial-card,.about-box,.contact-box"
+).forEach(el => observer.observe(el));
+
+// ===== Smooth Scroll =====
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+
+anchor.addEventListener("click", function(e){
+
+e.preventDefault();
+
+document.querySelector(this.getAttribute("href")).scrollIntoView({
+behavior:"smooth"
 });
 
-</script>
+});
+
+});
+
+// ===== Button Hover =====
+
+document.querySelectorAll(".btn1,.btn2").forEach(btn=>{
+
+btn.addEventListener("mouseenter",()=>{
+
+btn.style.transform="scale(1.05)";
+
+});
+
+btn.addEventListener("mouseleave",()=>{
+
+btn.style.transform="scale(1)";
+
+});
+
+});
+
+// ===== Console Message =====
+
+console.log("Hire Flow Website Loaded Successfully 🚀");
+}
+
